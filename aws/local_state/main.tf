@@ -6,7 +6,7 @@ terraform {
     }
   }
 
-  required_version = ">= 1.2.0"
+  required_version = ">= 1.10.0"
 }
 
 provider "aws" {
@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20240801"
+  ami           = "ami-0866a3c8686eaeeba"
   instance_type = "t2.micro"
 
   tags = {
